@@ -14,23 +14,28 @@
     ],
     "hair": [
       "female",
-      "16",
-      "B56733FF"
+      "4",
+      "C6610EFF"
     ],
     "eye": [
       "female",
-      "2",
-      null
+      "3",
+      "6E6E6EFF"
     ],
     "face": [
       "female",
-      "23",
-      "A7856EFF"
+      "kitsune-1",
+      null
     ],
     "cloth": [
       "female",
-      "8",
-      null
+      "19",
+      "7A7A7AFF"
+    ],
+    "boots": [
+      "female",
+      "3",
+      "684228FF"
     ]
   }
 }
