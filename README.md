@@ -1,14 +1,13 @@
 # Elin Kitsune PCC
 
-----
+-
+
 ![Version Badge](https://img.shields.io/badge/version-1.0.0-blue)
 ![GitHub License](https://img.shields.io/github/license/n15g/elin-kitsune-pcc)
 
 ### A Kitsune PCC mod for [Elin](https://store.steampowered.com/app/2135150/Elin/)
 
 Touch fluffy tail!
-
----
 
 ## Character Creation
 
@@ -21,8 +20,6 @@ You can find the mod folder by using the `Mod Viewer` on the title screen, or fr
 the mod name and then `Open in Explorer`.
 Use the files in the `Template` folder with the `Import` function in the character editor.
 
----
-
 # Licence
 
 The license for all content unless otherwise labelled is the [unlicense](LICENSE).
@@ -31,18 +28,12 @@ You are free to copy and use any of the mod content however you want, including 
 
 Attribution is **not** required, but is always appreciated.
 
----
-
 # Development
-
----
 
 ## Requirements
 
 * **[Aseprite](https://www.aseprite.org/)** - For PCC sprites in `*.ase` format.
 * **Python** - Build scripts and various tooling.
-
----
 
 ## PCC Sprites
 
