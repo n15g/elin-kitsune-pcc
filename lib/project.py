@@ -105,4 +105,4 @@ def glob_copy(src: str, _glob: str, dst: str, new_ext: str | None = None):
 def mkarchive(src: str, dst: str):
     print(dst, "zip", src)
     shutil.make_archive(dst, "zip", src)
-    print(f"[{COLOR.GREEN}C{COLOR.RESET}] {dst}")
+    print(f"[{COLOR.GREEN}C{COLOR.RESET}] {dst}.zip")

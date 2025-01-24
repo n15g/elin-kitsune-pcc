@@ -29,5 +29,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: '{{steps.toml_package_name.outputs.value}}-v{{steps.toml_version.outputs.value}}'
-          path: 'dist/{{steps.toml_package_name.outputs.value}}-v{{steps.toml_version.outputs.value}}.zip'
+          name: '${{steps.toml_package_name.outputs.value}}-v${{steps.toml_version.outputs.value}}'
+          path: 'dist/${{steps.toml_package_name.outputs.value}}-v${{steps.toml_version.outputs.value}}.zip'
