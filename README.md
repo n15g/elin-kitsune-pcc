@@ -1,7 +1,7 @@
 # Elin Kitsune PCC
 
 ![Version Badge](https://img.shields.io/github/v/release/n15g/elin-kitsune-pcc)
-[![Steam Subscriptions](https://img.shields.io/steam/subscriptions/TODO)](https://steamcommunity.com/sharedfiles/filedetails/?id=TODO)
+[![Steam Subscriptions](https://img.shields.io/steam/subscriptions/3413557291)](https://steamcommunity.com/sharedfiles/filedetails/?id=3413557291)
 ![GitHub License](https://img.shields.io/github/license/n15g/elin-kitsune-pcc)
 
 ### A Kitsune PCC mod for [Elin](https://store.steampowered.com/app/2135150/Elin/)
@@ -35,6 +35,15 @@ that will copy those files to the default import directory for convenience.
 You can find the mod folder by selecting the `Mod Viewer` on the title screen, or from the main menu during the game.
 Click the mod name and then `Open in Explorer`.
 Use the files from the `Template` folder with the `Import` function in the character editor.
+
+## Installation
+
+a) Subscribe on [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3413557291).
+
+or
+
+b) Download the latest [release](https://github.com/n15g/elin-kitsune-pcc/releases) and unzip the contents into the
+`Elin/Package` folder.
 
 # Licence
 
