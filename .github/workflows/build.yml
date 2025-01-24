@@ -17,15 +17,16 @@ jobs:
           file: 'pyproject.toml'
           field: 'tool.elin.package-name'
 
+      - run: pipx install poetry
+
       - uses: actions/setup-python@v5
-      - uses: abatilo/actions-poetry@v3
-      - uses: actions/cache@v3
         with:
-          path: ./.venv
-          key: venv-${{ hashFiles('poetry.lock') }}
+          python-version: '3.10'
+          cache: 'poetry'
 
       - run: poetry install
-      - run: poetry run dist
+      - run: poetry run invoke dist
+
       - uses: actions/upload-artifact@v4
         with:
           name: {{steps.toml_package_name.outputs.value}}-v{{steps.toml_version.outputs.value}}
