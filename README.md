@@ -2,7 +2,8 @@
 
 -
 
-![Version Badge](https://img.shields.io/badge/version-1.0.0-blue)
+![Version Badge](https://img.shields.io/github/v/release/n15g/elin-kitsune-pcc)
+[![Steam Subscriptions](https://img.shields.io/steam/subscriptions/TODO)](https://steamcommunity.com/sharedfiles/filedetails/?id=TODO)
 ![GitHub License](https://img.shields.io/github/license/n15g/elin-kitsune-pcc)
 
 ### A Kitsune PCC mod for [Elin](https://store.steampowered.com/app/2135150/Elin/)
@@ -33,7 +34,8 @@ Attribution is **not** required, but is always appreciated.
 ## Requirements
 
 * **[Aseprite](https://www.aseprite.org/)** - For PCC sprites in `*.ase` format.
-* **Python** - Build scripts and various tooling.
+* **[Python](https://wiki.python.org/moin/BeginnersGuide/Download)** - Build scripts and various tooling.
+* **[Poetry](https://python-poetry.org/docs/#installation)** - Python dependency manager.
 
 ## PCC Sprites
 
