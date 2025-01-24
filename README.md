@@ -6,7 +6,21 @@
 
 ### A Kitsune PCC mod for [Elin](https://store.steampowered.com/app/2135150/Elin/)
 
-Touch fluffy tail!
+[Touch fluffy tail]
+
+![3 Tails](site/showcase-3.gif)
+![5 Tails](site/showcase-5.gif)
+![9 Tails](site/showcase-9.gif)
+
+The Nefu are a fox-like race with tails that increase in number as they age... so where are all the tails??
+
+This mod adds a bunch of new tail options that allow you to drown your characters in a fluffy heaven.
+
+* 1, 3, 5 and 9-tail variants in two color tones to match Mifu and Nefu fur colors.
+* A set of fluffier and pointier ears.
+* Body variants with no human ears.
+
+![Screenshot](site/ss1.png)
 
 ## Character Creation
 

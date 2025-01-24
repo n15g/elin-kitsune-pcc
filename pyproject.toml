@@ -1,7 +1,7 @@
 [project]
 name = "n15g-kitsune-pcc"
-version = "0.0.1"
-description = """Adds new Kitsune-themed PCC options to the game, including multiple kyuubi-like tails."""
+version = "1.0.0"
+description = """Adds new Kitsune-themed PCC options to the game, including multiple kyubi-like tails."""
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
