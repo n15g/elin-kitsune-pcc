@@ -44,29 +44,27 @@ def rmdir(path: str) -> None:
         shutil.rmtree(path)
 
 
-def copy_file(src: str, dst: str, rel_root: str = None):
+def copy_file(src: str, dst: str):
     dst_path = os.path.join(dst, os.path.basename(src)) if os.path.isdir(dst) else dst
-    print_path = os.path.relpath(dst_path, rel_root) if rel_root else dst
 
     if not os.path.exists(src):
-        print(f"[{CopyResult.MISSING.print()}] {print_path}")
+        print(f"[{CopyResult.MISSING.print()}] {dst_path}")
         return
 
     exists = os.path.exists(dst_path)
     if exists and filecmp.cmp(src, dst_path):
-        print(f"[{CopyResult.UNMODIFIED.print()}] {print_path}")
+        print(f"[{CopyResult.UNMODIFIED.print()}] {dst_path}")
         return
 
     shutil.copy(src, dst_path)
-    print(f"[{(CopyResult.UPDATED if exists else CopyResult.CREATED).print()}] {print_path}")
+    print(f"[{(CopyResult.UPDATED if exists else CopyResult.CREATED).print()}] {dst_path}")
 
 
-def copy_template(src: str, dst: str, rel_root: str = None):
+def copy_template(src: str, dst: str):
     dst_path = os.path.join(dst, os.path.basename(src)) if os.path.isdir(dst) else dst
-    print_path = os.path.relpath(dst_path, rel_root) if rel_root else dst
 
     if not os.path.exists(src):
-        print(f"[{CopyResult.MISSING.print()}] {print_path}")
+        print(f"[{CopyResult.MISSING.print()}] {dst_path}")
         return
 
     with open(src, 'r') as src_file:
@@ -79,12 +77,12 @@ def copy_template(src: str, dst: str, rel_root: str = None):
 
         content = chevron.render(src_file, config.to_dict())
         if content == existing_content:
-            print(f"[{CopyResult.UNMODIFIED.print()}] {print_path}")
+            print(f"[{CopyResult.UNMODIFIED.print()}] {dst_path}")
             return
 
         with open(dst_path, 'w') as dst_file:
             dst_file.write(content)
-            print(f"[{(CopyResult.UPDATED if exists else CopyResult.CREATED).print()}] {print_path}")
+            print(f"[{(CopyResult.UPDATED if exists else CopyResult.CREATED).print()}] {dst_path}")
 
 
 def glob_copy(src: str, _glob: str, dst: str, new_ext: str | None = None):
@@ -101,4 +99,10 @@ def glob_copy(src: str, _glob: str, dst: str, new_ext: str | None = None):
         else:
             dst_path = os.path.join(dst, rel_path)
 
-        copy_file(src_path, dst_path, dst)
+        copy_file(src_path, dst_path)
+
+
+def mkarchive(src: str, dst: str):
+    print(dst, "zip", src)
+    shutil.make_archive(dst, "zip", src)
+    print(f"[{COLOR.GREEN}C{COLOR.RESET}] {dst}")

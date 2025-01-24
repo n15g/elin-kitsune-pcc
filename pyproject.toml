@@ -18,8 +18,7 @@ build-backend = "poetry.core.masonry.api"
 package-mode = false
 
 [tool.elin]
+package-name = "N15g_Kitsune_PCC"
 title = "N15g Kitsune PCC"
 author = "N15g"
 tags = "PCC"
-package-name = "N15g_Kitsune_PCC"
-install-dir = "D:\\Steam\\steamapps\\common\\Elin\\Package"

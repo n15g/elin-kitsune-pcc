@@ -1,0 +1,32 @@
+name: Build
+on: [ push ]
+jobs:
+  Checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: SebRollen/toml-action@v1.2.0
+        id: toml_version
+        with:
+          file: 'pyproject.toml'
+          field: 'project.version'
+      - uses: SebRollen/toml-action@v1.2.0
+        id: toml_package_name
+        with:
+          file: 'pyproject.toml'
+          field: 'tool.elin.package-name'
+
+      - uses: actions/setup-python@v5
+      - uses: abatilo/actions-poetry@v3
+      - uses: actions/cache@v3
+        with:
+          path: ./.venv
+          key: venv-${{ hashFiles('poetry.lock') }}
+
+      - run: poetry install
+      - run: poetry run dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: {{steps.toml_package_name.outputs.value}}-v{{steps.toml_version.outputs.value}}
+          path: dist/{{steps.toml_package_name.outputs.value}}-v{{steps.toml_version.outputs.value}}.zip
