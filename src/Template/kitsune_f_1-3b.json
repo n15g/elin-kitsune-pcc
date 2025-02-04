@@ -29,18 +29,13 @@
     ],
     "cloth": [
       "female",
-      "2",
+      "43",
       "7A7A7AFF"
     ],
     "subhair": [
       "female",
       "10",
-      "C6610EFF"
-    ],
-    "pants": [
-      "female",
-      "3",
-      null
+      "C8A37BFF"
     ]
   }
 }

@@ -16,7 +16,8 @@ The Nefu are a fox-like race with tails that increase in number as they age... s
 
 This mod adds a bunch of new tail options that allow you to drown your characters in a fluffy heaven.
 
-* 1, 3, 5 and 9-tail variants in two color tones to match Mifu and Nefu fur colors.
+* 1, 3, 5 and 9-tail variants.
+* 5 default fur colors to work with various tints/shades.
 * A set of fluffier and pointier ears.
 * Body variants with no human ears.
 
@@ -35,6 +36,24 @@ that will copy those files to the default import directory for convenience.
 You can find the mod folder by selecting the `Mod Viewer` on the title screen, or from the main menu during the game.
 Click the mod name and then `Open in Explorer`.
 Use the files from the `Template` folder with the `Import` function in the character editor.
+
+## Release Notes
+
+### 1.1.0 - New Fur Colors
+
+* Added 3 new fur colors + templates, (black, grey and white), that should be easier to tint into whatever fur color you
+  need.
+    * `a` - Orange
+    * `b` - Cream
+    * `c` - Black
+    * `d` - Grey
+    * `e` - White
+
+### 1.0.0 - Initial Release
+
+* 1, 3, 5 and 9-tail variants in two color tones to match Mifu and Nefu fur colors.
+* A set of fluffier and pointier ears.
+* Body variants with no human ears.
 
 ## Installation
 
