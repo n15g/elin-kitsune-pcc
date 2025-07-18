@@ -1,0 +1,41 @@
+{
+  "$id": "1",
+  "map": {
+    "$id": "2",
+    "body": [
+      "female",
+      "2-no-ear",
+      null
+    ],
+    "mantle": [
+      "female",
+      "kitsune-1-1h",
+      null
+    ],
+    "hair": [
+      "female",
+      "1",
+      "768FBEFF"
+    ],
+    "eye": [
+      "female",
+      "3",
+      "6E6E6EFF"
+    ],
+    "face": [
+      "female",
+      "kitsune-1h",
+      null
+    ],
+    "cloth": [
+      "female",
+      "10",
+      "7A7A7AFF"
+    ],
+    "pants": [
+      "female",
+      "6",
+      "949494FF"
+    ]
+  }
+}

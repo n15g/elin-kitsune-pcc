@@ -39,6 +39,13 @@ Use the files from the `Template` folder with the `Import` function in the chara
 
 ## Release Notes
 
+### 1.2.0 - Even More Fur Colors
+
+* Added an additional 3 new fur colors
+    * `f` - Red
+    * `g` - Purple
+    * `h` - Krystal
+
 ### 1.1.0 - New Fur Colors
 
 * Added 3 new fur colors + templates, (black, grey and white), that should be easier to tint into whatever fur color you
