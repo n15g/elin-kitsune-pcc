@@ -41,10 +41,12 @@ Use the files from the `Template` folder with the `Import` function in the chara
 
 ### 1.2.0 - Even More Fur Colors
 
-* Added an additional 3 new fur colors
+* `[1.2.0]` Added an additional 3 new fur colors
     * `f` - Red
     * `g` - Purple
     * `h` - Krystal
+* `[1.2.1]` Added a deeper red color
+    * `i` - Deeper Red
 
 ### 1.1.0 - New Fur Colors
 
@@ -100,3 +102,15 @@ the [asprite-elin-devtools](https://github.com/n15g/aseprite-elin-devtools) proj
 * ```poetry run invoke dist``` - Create zip bundle in the `dist` folder.
 * ```poetry run invoke install --path=C:\Your\Elin\Package\Folder``` - Build and install the package into your Elin
   `Package` folder.
+
+# Release
+* Update release notes in [README.md](README.md)
+* Update version number in [pyroject.toml](pyproject.toml)
+* Update version number in [the preview image](src/preview.jpg) if needed
+* Commit and tag the new version ```git tag v1.x.y```
+* Push to github ```git push && git push --tags```
+* Publish the release on [GitHub](https://github.com/n15g/elin-kitsune-pcc/releases).
+* ```poetry run invoke install```
+* Publish the latest package from within the Elin Mod Manager in-game
+* Update the Steam store page preview images and description
+* Add patch notes to the release in Steam
